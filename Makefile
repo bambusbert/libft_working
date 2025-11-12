@@ -6,7 +6,7 @@
 #    By: slambert <slambert@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/03 13:41:02 by slambert          #+#    #+#              #
-#    Updated: 2025/11/12 19:10:38 by slambert         ###   ########.fr        #
+#    Updated: 2025/11/12 19:18:30 by slambert         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ PART2 = ft_itoa.c ft_strjoin.c ft_split.c ft_striteri.c ft_strmapi.c \
 		ft_putnbr_fd.c
 		
 BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
-		ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstiter.c
+		ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstiter.c ft_lstmap.c
 
 PARTPRINTF = ft_printf.c ft_putnbr_unsigned.c utils_hex.c
 
