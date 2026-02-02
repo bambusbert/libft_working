@@ -107,13 +107,18 @@ static char	*extract_line_and_remainder(char **line_to_ret, char **stash,
 {
 	*line_to_ret = ft_substr(*stash, 0, (newline_pointer - *stash) + 1);
 	if (!*line_to_ret)
+	{
+		free(*stash);
+		*stash = NULL;
 		return (NULL);
+	}
 	*temp = ft_substr(*stash, (newline_pointer - *stash) + 1, ft_strlen(*stash)
 			- (newline_pointer - *stash + 1));
 	if (!*temp)
 	{
 		free(*line_to_ret);
 		free(*stash);
+		*stash = NULL;
 		return (NULL);
 	}
 	free(*stash);

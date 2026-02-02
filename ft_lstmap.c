@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: slambert <slambert@student.42.fr>          +#+  +:+       +#+        */
+/*   By: slambert <slambert@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 18:09:30 by slambert          #+#    #+#             */
-/*   Updated: 2025/11/12 19:05:16 by slambert         ###   ########.fr       */
+/*   Updated: 2025/12/09 16:43:39 by slambert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list *lst_new;
-	t_list *node;
+	t_list	*lst_new;
+	t_list	*node;
 
 	if (!lst || !f)
 		return (NULL);
